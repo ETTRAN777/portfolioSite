@@ -1,10 +1,11 @@
 // Highlight nav link based on scroll position
-const sections = document.querySelectorAll("section[id]");
+const sections = document.querySelectorAll("section[id], .contact-section");
 const navLinks = document.querySelectorAll("#navbar a");
 
 window.addEventListener("scroll", () => {
   const scrollY = window.pageYOffset;
-  sections.forEach(sec => {
+  let found = false;
+  sections.forEach((sec, idx) => {
     const top = sec.offsetTop - 100;
     const height = sec.offsetHeight;
     if (scrollY >= top && scrollY < top + height) {
@@ -14,8 +15,18 @@ window.addEventListener("scroll", () => {
           link.classList.add("active");
         }
       });
+      found = true;
     }
   });
+  // If at the bottom of the page, highlight Contact
+  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 2) {
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href").includes("contact")) {
+        link.classList.add("active");
+      }
+    });
+  }
 });
 
 // Typed.js animation
@@ -29,7 +40,7 @@ const typed = new Typed('#typed-text', {
 });
 
 // Swiper background
-const swiper = new Swiper('.background-slider', {
+new Swiper('.background-slider', {
   effect: 'fade',
   fadeEffect: { crossFade: true },
   speed: 1500,
