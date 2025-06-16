@@ -1,5 +1,6 @@
 // Highlight nav link based on scroll position
 const sections = document.querySelectorAll("section[id], .contact-section");
+sections.add(document.getElementById("resume"));
 const navLinks = document.querySelectorAll("#navbar a");
 
 window.addEventListener("scroll", () => {

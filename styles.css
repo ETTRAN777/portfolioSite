@@ -163,7 +163,7 @@ section h2 {
   transform: translateY(-4px);
 }
 .project-card {
-  background: linear-gradient(135deg, #f8fafc 60%, #e0e7ff 100%);
+  background: linear-gradient(135deg, #f8fafc 60%, #a5cbf9 100%);
   border: none;
   border-radius: 18px;
   padding: 2rem 2rem 1.5rem 2rem;
@@ -354,7 +354,7 @@ footer {
 .resume-btn {
   display: inline-block;
   background: linear-gradient(90deg, #2563eb 0%, #38bdf8 100%);
-  color: #fff;
+  color: #fff!important;
   font-weight: 600;
   font-size: 1.1rem;
   padding: 0.75rem 1.5rem;
