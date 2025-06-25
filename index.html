@@ -6,21 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ethan Tran • Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-
-    <!-- Swiper.js CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-    <!-- Typed.js -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-    <!-- Swiper.js JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -28,10 +13,10 @@
     <!-- Navbar -->
     <nav id="navbar">
         <ul>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a onclick="scrollToSection('hero')">Home</a></li>
+            <li><a onclick="scrollToSection('skills')">Skills and Resume</a></li>
+            <li><a onclick="scrollToSection('projects')">Projects</a></li>
+            <li><a onclick="scrollToSection('contact')">Contact</a></li>
         </ul>
     </nav>
 
@@ -39,8 +24,7 @@
     <header id="hero">
         <div class="hero-content">
             <h1>Hey, I'm Ethan Tran</h1>
-            <p>Information and Computer Scientist • Game Developer • Database Practitioner • Software Engineer •
-                Full-Stack Developer</p>
+            <p>Information and Computer Scientist • Game Developer • Full-Stack Developer • Database Practitioner</p>
         </div>
     </header>
 
@@ -66,17 +50,20 @@
 
         <div class="description">
             <br><br>
-            <p>I'm an information and computer scientist with a strong interest in game development, particularly using C#. My academic
+            <p>I'm an information and computer scientist with a strong interest in game development, particularly using
+                C#. My academic
                 background includes solid foundations in Java, C, SQL, and the core front-end web technologies—HTML,
-                CSS, and JavaScript. I’m passionate about the structured, problem-solving nature of software development and enjoy the
+                CSS, and JavaScript. I’m passionate about the structured, problem-solving nature of software development
+                and enjoy the
                 challenge of crafting efficient, elegant solutions to complex technical problems.</p>
             <br>
             <p>In my free time, I enjoy developing games as a creative outlet and also love playing video games to
-                unwind and draw inspiration from the industry's best practices. Web design is another area I’m passionate
+                unwind and draw inspiration from the industry's best practices. Web design is another area I’m
+                passionate
                 about, blending visual design with technical precision.</p>
         </div>
 
-        <a id="resume" href="ethanTranFunctionalResume.pdf" target="_blank" class="resume-btn">Resume PDF</a>
+        <a href="ethanTranFunctionalResume.pdf" target="_blank" class="resume-btn">Resume PDF</a>
     </section>
 
     <section id="projects">
@@ -104,7 +91,7 @@
             <h3>Debt and Taxes - 2D Clicker Game</h3>
             <p>Core Game development: Gameplay mechanics, GUI, ingame time and threat system.</p>
             <a href="/gallery.html">
-                    <p class="resume-btn"><span style="color: white;">Go to Gallery →</span></p>
+                <p class="resume-btn"><span style="color: white;">Go to Gallery →</span></p>
             </a>
         </div>
     </section>
